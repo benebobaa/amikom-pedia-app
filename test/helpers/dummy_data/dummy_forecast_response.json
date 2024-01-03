@@ -1,0 +1,98 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1701248400,
+            "main": {
+                "temp": 32.52,
+                "feels_like": 39.52,
+                "temp_min": 31.73,
+                "temp_max": 32.52,
+                "pressure": 1006,
+                "sea_level": 1006,
+                "grnd_level": 1004,
+                "humidity": 67,
+                "temp_kf": 0.79
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10d"
+                }
+            ],
+            "clouds": {
+                "all": 55
+            },
+            "wind": {
+                "speed": 3.82,
+                "deg": 23,
+                "gust": 3.35
+            },
+            "visibility": 10000,
+            "pop": 0.42,
+            "rain": {
+                "3h": 0.3
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2023-11-29 09:00:00"
+        },
+        {
+            "dt": 1701259200,
+            "main": {
+                "temp": 30.96,
+                "feels_like": 36.62,
+                "temp_min": 29.98,
+                "temp_max": 30.96,
+                "pressure": 1007,
+                "sea_level": 1007,
+                "grnd_level": 1006,
+                "humidity": 67,
+                "temp_kf": 0.98
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 70
+            },
+            "wind": {
+                "speed": 2.8,
+                "deg": 41,
+                "gust": 2.78
+            },
+            "visibility": 10000,
+            "pop": 0.46,
+            "rain": {
+                "3h": 0.16
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-11-29 12:00:00"
+        }
+    ],
+    "city": {
+        "id": 1642911,
+        "name": "Jakarta",
+        "coord": {
+            "lat": -6.2146,
+            "lon": 106.8451
+        },
+        "country": "ID",
+        "population": 8540121,
+        "timezone": 25200,
+        "sunrise": 1701210451,
+        "sunset": 1701255254
+    }
+}
