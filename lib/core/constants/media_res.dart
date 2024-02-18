@@ -10,6 +10,8 @@ class MediaRes {
   static const imgSurvei = '$_baseImages/img_survei.png';
   static const placeholderImagePng = '$_baseImages/placeholder_image.png';
   static const placeholderImageGif = '$_baseImages/placeholder_image.gif';
+  static const otpPageImagePng = '$_baseImages/otp_page_image.png';
+  static const otpSuccessImagePng = '$_baseImages/otp_success_image.png';
 
   //lottie
   static const aniUnderConstruction =
@@ -19,4 +21,5 @@ class MediaRes {
 
   //icons
   static const icBtnList = '$_baseIcons/ic_btn_list.png';
+  static const icLogo = '$_baseIcons/logo.png';
 }

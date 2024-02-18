@@ -12,7 +12,7 @@ import 'package:lottie/lottie.dart';
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
-  static const routeName = '/';
+  static const routeName = '/splash';
   @override
   State<SplashPage> createState() => _SplashPageState();
 }
@@ -79,8 +79,7 @@ class _SplashPageState extends State<SplashPage> {
               children: [
                 Lottie.asset(MediaRes.aniSplashPage),
                 const Text('Jojo Weather',
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.w400))
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400))
               ],
             ),
           ),
