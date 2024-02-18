@@ -14,4 +14,23 @@ class Urls {
 
   static String currentForecastByName(String cityName) =>
       '$baseUrl/forecast?q=$cityName&appid=$apiKey&units=metric';
+
+  // Amikompedia
+  static const String apiUrl = 'https://amikompedia.beneboba.me';
+
+  static const String login = '$apiUrl/api/v1/auth/_login';
+
+  static const String register = '$apiUrl/api/v1/auth/_register';
+
+  static const String renewToken = '$apiUrl/api/v1/auth/_renew-token';
+
+  static const String forgotPassword = '$apiUrl/api/v1/users/_forgot-password';
+
+  static const String otpValidate = '$apiUrl/api/v1/otp/_validation';
+
+  static const String otpResend = '$apiUrl/api/v1/otp/_resend';
+
+  static const String updateUser = '$apiUrl/api/v1/users';
+
+  static const String profileUser = '$apiUrl/api/v1/users/profile';
 }
