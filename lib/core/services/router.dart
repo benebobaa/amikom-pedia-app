@@ -1,7 +1,10 @@
-import 'package:amikompedia_app/presentation/pages/login_page.dart';
-import 'package:amikompedia_app/presentation/pages/otp_page.dart';
-import 'package:amikompedia_app/presentation/pages/otp_success_page.dart';
-import 'package:amikompedia_app/presentation/pages/register_page.dart';
+import 'package:amikompedia_app/presentation/module/otp/otp_page.dart';
+import 'package:amikompedia_app/presentation/module/otp/otp_success_page.dart';
+import 'package:amikompedia_app/presentation/module/stepper/stepper_one_page.dart';
+import 'package:amikompedia_app/presentation/module/stepper/stepper_three_page.dart';
+import 'package:amikompedia_app/presentation/module/stepper/stepper_two_page.dart';
+import 'package:amikompedia_app/presentation/module/login/login_page.dart';
+import 'package:amikompedia_app/presentation/module/register/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:amikompedia_app/core/pages/under_construction_page.dart';
@@ -38,6 +41,18 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //otp success
     case OtpSuccessPage.routeName:
       return _pageBuilder((_) => const OtpSuccessPage(), settings: settings);
+
+    //stepper one
+    case StepperOnePage.routeName:
+      return _pageBuilder((_) => const StepperOnePage(), settings: settings);
+
+    //stepper two
+    case StepperTwoPage.routeName:
+      return _pageBuilder((_) => StepperTwoPage(), settings: settings);
+
+    //stepper three
+    case StepperThreePage.routeName:
+      return _pageBuilder((_) => StepperThreePage(), settings: settings);
 
     default:
       return _pageBuilder(

@@ -22,4 +22,5 @@ class MediaRes {
   //icons
   static const icBtnList = '$_baseIcons/ic_btn_list.png';
   static const icLogo = '$_baseIcons/logo.png';
+  static const icPen = '$_baseIcons/pen.png';
 }

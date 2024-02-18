@@ -1,8 +1,8 @@
 import 'package:amikompedia_app/core/constants/media_res.dart';
 import 'package:amikompedia_app/core/widgets/custom_button.dart';
 import 'package:amikompedia_app/core/widgets/custom_text_form_field.dart';
-import 'package:amikompedia_app/presentation/pages/otp_page.dart';
-import 'package:amikompedia_app/presentation/pages/register_page.dart';
+import 'package:amikompedia_app/presentation/module/otp/otp_page.dart';
+import 'package:amikompedia_app/presentation/module/stepper/stepper_one_page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -105,8 +105,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        print("Daftar");
-                        Navigator.pushNamed(context, RegisterPage.routeName);
+                        Navigator.pushNamed(context, StepperOnePage.routeName);
                         // Add your 'Register' logic here
                       },
                   ),

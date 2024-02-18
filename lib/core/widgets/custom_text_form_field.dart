@@ -7,6 +7,7 @@ class CustomTextFormField extends StatefulWidget {
       {super.key,
       this.validator,
       this.isObscure = false,
+      this.isMultiline = false,
       required this.isPassword,
       this.hintText,
       this.controller,
@@ -18,6 +19,7 @@ class CustomTextFormField extends StatefulWidget {
   final bool isPassword;
   final String? hintText;
   final TextEditingController? controller;
+  bool? isMultiline;
 
   @override
   State<CustomTextFormField> createState() => _CustomTextFormFieldState();
@@ -36,6 +38,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         ),
         SizedBox(height: 6.h),
         TextFormField(
+          maxLines: widget.isMultiline! ? 3 : 1,
           validator: widget.validator,
           controller: widget.controller,
           obscureText: widget.isObscure ?? false,

@@ -1,7 +1,7 @@
 import "package:amikompedia_app/core/constants/media_res.dart";
 import "package:amikompedia_app/core/widgets/custom_button.dart";
-import "package:amikompedia_app/presentation/pages/otp_success_page.dart";
-import "package:amikompedia_app/presentation/widgets/otp_form.dart";
+import "package:amikompedia_app/presentation/module/otp/otp_success_page.dart";
+import 'package:amikompedia_app/presentation/module/otp/widgets/otp_form.dart';
 import "package:flutter/gestures.dart";
 import "package:flutter/material.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
