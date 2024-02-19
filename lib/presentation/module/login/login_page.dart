@@ -31,7 +31,8 @@ class LoginPage extends StatelessWidget {
           OverlayLoadingProgress.stop();
           OverlayToastMessage.show(
             widget: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
               decoration: BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(8.0),
@@ -60,7 +61,8 @@ class LoginPage extends StatelessWidget {
           OverlayLoadingProgress.stop();
           OverlayToastMessage.show(
             widget: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
               decoration: BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(8.0),
@@ -130,7 +132,9 @@ class LoginPage extends StatelessWidget {
                 children: [
                   const Spacer(),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, OtpPage.routeName);
+                    },
                     child: const Text("Forgot Password?"),
                   )
                 ],
@@ -166,7 +170,6 @@ class LoginPage extends StatelessWidget {
                         ..onTap = () {
                           Navigator.pushNamed(
                               context, StepperOnePage.routeName);
-                          // Add your 'Register' logic here
                         },
                     ),
                   ],
