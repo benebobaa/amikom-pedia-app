@@ -19,7 +19,7 @@ class StepperOnePage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: Divider(
                     thickness: 2.2,
                     color: Colors.deepPurple,
@@ -28,13 +28,13 @@ class StepperOnePage extends StatelessWidget {
                 SizedBox(
                   width: 14.w,
                 ),
-                Expanded(
-                  child: Divider(),
+                const Expanded(
+                  child: const Divider(),
                 ),
                 SizedBox(
                   width: 14.w,
                 ),
-                Expanded(
+                const Expanded(
                   child: Divider(),
                 ),
               ],

@@ -5,6 +5,7 @@ import 'package:amikompedia_app/presentation/module/otp/widgets/otp_form.dart';
 import "package:flutter/gestures.dart";
 import "package:flutter/material.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
+import "package:overlay_kit/overlay_kit.dart";
 
 class OtpPage extends StatelessWidget {
   const OtpPage({super.key});
@@ -20,7 +21,7 @@ class OtpPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
-              child: Container(
+              child: SizedBox(
                 height: 120.h,
                 child: Image.asset(
                   MediaRes.otpPageImagePng,
@@ -35,7 +36,7 @@ class OtpPage extends StatelessWidget {
             ),
             SizedBox(height: 10.h),
             Text.rich(
-              TextSpan(
+              const TextSpan(
                 text:
                     'Kami telah mengirimkan 6 digit OTP Verification ke email ',
                 style: TextStyle(
@@ -55,7 +56,7 @@ class OtpPage extends StatelessWidget {
               style: TextStyle(fontSize: 13.sp),
             ),
             SizedBox(height: 20.h),
-            OtpForm(),
+            const OtpForm(),
             SizedBox(height: 60.h),
             CustomButton(
                 title: "Verifikasi",
@@ -66,20 +67,31 @@ class OtpPage extends StatelessWidget {
             Text.rich(
               TextSpan(
                 text: 'Tidak menerima kode? ',
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                 ),
                 children: [
                   TextSpan(
                     text: 'Kirim Ulang OTP',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.deepPurple, // Customize the text color
                     ),
                     recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        print("Daftar");
-                        // Add your 'Register' logic here
+                      ..onTap = () async {
+                        OverlayLoadingProgress.start(
+                            widget: Container(
+                          height: 70.h,
+                          width: 70.w,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child:
+                              const Center(child: CircularProgressIndicator()),
+                        ));
+                        await Future.delayed(const Duration(seconds: 3));
+                        OverlayLoadingProgress.stop();
                       },
                   ),
                 ],

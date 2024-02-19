@@ -34,7 +34,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       children: [
         Text(
           widget.title,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 6.h),
         TextFormField(
@@ -60,19 +60,19 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             fillColor: Colors.grey[100],
             filled: true,
             errorBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.red),
+              borderSide: const BorderSide(color: Colors.red),
               borderRadius: BorderRadius.circular(10),
             ),
             focusedErrorBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.red),
+              borderSide: const BorderSide(color: Colors.red),
               borderRadius: BorderRadius.circular(10),
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.deepPurple),
+              borderSide: const BorderSide(color: Colors.deepPurple),
               borderRadius: BorderRadius.circular(10),
             ),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.transparent),
+              borderSide: const BorderSide(color: Colors.transparent),
               borderRadius: BorderRadius.circular(10),
             ),
           ),

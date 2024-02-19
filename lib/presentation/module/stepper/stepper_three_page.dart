@@ -1,6 +1,5 @@
 import 'package:amikompedia_app/core/widgets/custom_button.dart';
 import 'package:amikompedia_app/core/widgets/custom_text_form_field.dart';
-import 'package:amikompedia_app/presentation/module/stepper/stepper_two_page.dart';
 import 'package:amikompedia_app/presentation/module/stepper/widgets/survey_listview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +21,7 @@ class StepperThreePage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: Divider(
                     thickness: 2.2,
                     color: Colors.deepPurple,
@@ -31,7 +30,7 @@ class StepperThreePage extends StatelessWidget {
                 SizedBox(
                   width: 14.w,
                 ),
-                Expanded(
+                const Expanded(
                   child: Divider(
                     thickness: 2.2,
                     color: Colors.deepPurple,
@@ -40,7 +39,7 @@ class StepperThreePage extends StatelessWidget {
                 SizedBox(
                   width: 14.w,
                 ),
-                Expanded(
+                const Expanded(
                   child: Divider(
                     thickness: 2.2,
                     color: Colors.deepPurple,
@@ -54,9 +53,9 @@ class StepperThreePage extends StatelessWidget {
               style: TextStyle(fontSize: 26.sp, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 22.h),
-            Text(
+            const Text(
               "Tahu dari mana Amikom Pedia?",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
             SurveyListView(),
             SizedBox(height: 22.h),

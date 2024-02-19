@@ -18,7 +18,7 @@ class OtpSuccessPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
-              child: Container(
+              child: SizedBox(
                 height: 120.h,
                 child: Image.asset(
                   MediaRes.otpSuccessImagePng,

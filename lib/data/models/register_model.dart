@@ -18,6 +18,7 @@ class RegisterModel extends RegisterEntity {
 
 
 
+  @override
   RegisterEntity toEntity() => RegisterEntity(
         refCode: refCode,
         userRegister: userRegister.toEntity(),
@@ -55,6 +56,7 @@ class UserRegisterModel extends UserRegisterEntity {
     };
   }
 
+  @override
   UserRegisterEntity toEntity() => UserRegisterEntity(
         name: name,
         email: email,

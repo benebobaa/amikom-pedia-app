@@ -11,8 +11,8 @@ class RegisterPage extends StatelessWidget {
 
   static const routeName = "/register";
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  TextEditingController _passwordController = TextEditingController();
-  TextEditingController _confirmPasswordController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _confirmPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class RegisterPage extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(height: 60.h),
-                Container(
+                SizedBox(
                   height: 18.h,
                   child: Image.asset(
                     MediaRes.icLogo,
@@ -32,7 +32,7 @@ class RegisterPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20.h),
-                Divider(),
+                const Divider(),
                 SizedBox(height: 8.h),
                 Text(
                   "Getting Started",

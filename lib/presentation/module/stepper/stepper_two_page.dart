@@ -42,7 +42,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
             children: [
               Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Divider(
                       thickness: 2.2,
                       color: Colors.deepPurple,
@@ -51,7 +51,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                   SizedBox(
                     width: 14.w,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Divider(
                       thickness: 2.2,
                       color: Colors.deepPurple,
@@ -60,7 +60,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                   SizedBox(
                     width: 14.w,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Divider(),
                   ),
                 ],
@@ -75,7 +75,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                 style: TextStyle(fontSize: 26.sp, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 36.h),
-              Text.rich(
+              const Text.rich(
                 TextSpan(
                   text: "Header ",
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -89,7 +89,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                   ],
                 ),
               ),
-              Text(
+              const Text(
                 "Ukuran yang direkomendasikan 1500 x 500 px (3:1)",
                 style: TextStyle(
                   color: Colors.grey,
@@ -105,7 +105,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                       color: Colors.grey[400],
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Upload Header",
                         style: TextStyle(
@@ -130,7 +130,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                 ],
               ),
               SizedBox(height: 24.h),
-              Text(
+              const Text(
                 "Photo Profile",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
@@ -142,7 +142,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                       CircleAvatar(
                         radius: 40,
                         backgroundColor: Colors.grey[400],
-                        child: Icon(
+                        child: const Icon(
                           Icons.person_sharp,
                           size: 40,
                           color: Colors.white,
@@ -159,7 +159,7 @@ class _StepperTwoPageState extends State<StepperTwoPage> {
                             color: Colors.grey,
                           ),
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Upload Photo",
                             style: TextStyle(

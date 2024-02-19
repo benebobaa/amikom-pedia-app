@@ -7,7 +7,8 @@ class BaseResponse<T> extends Equatable {
 
   BaseResponse({required this.code, required this.status, required this.data});
 
-  factory BaseResponse.fromJson(Map<String, dynamic> json, T Function(dynamic) fromJsonData) {
+  factory BaseResponse.fromJson(Map<String, dynamic> json,
+      T Function(Map<String, dynamic>) fromJsonData) {
     return BaseResponse(
       code: json['code'],
       status: json['status'],

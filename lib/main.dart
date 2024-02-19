@@ -1,3 +1,4 @@
+import 'package:amikompedia_app/presentation/bloc/login_bloc/login_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:amikompedia_app/core/services/router.dart';
@@ -6,6 +7,7 @@ import 'package:amikompedia_app/presentation/bloc/search_bloc/search_bloc.dart';
 import 'package:amikompedia_app/presentation/bloc/splash_bloc/splash_bloc.dart';
 import 'package:amikompedia_app/presentation/bloc/weather_bloc/weather_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:overlay_kit/overlay_kit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,22 +25,25 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => locator<WeatherBloc>()),
         BlocProvider(create: (context) => locator<SplashBloc>()),
         BlocProvider(create: (context) => locator<SearchBloc>()),
+        BlocProvider(create: (context) => locator<LoginBloc>()),
       ],
       child: ScreenUtilInit(
         designSize: const Size(360, 690),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (_, child) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: 'Flutter Demo',
-            theme: ThemeData(
-              appBarTheme: const AppBarTheme(backgroundColor: Colors.white),
-              // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-              scaffoldBackgroundColor: Colors.white,
-              useMaterial3: true,
+          return OverlayKit(
+            child: MaterialApp(
+              debugShowCheckedModeBanner: false,
+              title: 'Flutter Demo',
+              theme: ThemeData(
+                appBarTheme: const AppBarTheme(backgroundColor: Colors.white),
+                // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+                scaffoldBackgroundColor: Colors.white,
+                useMaterial3: true,
+              ),
+              onGenerateRoute: generateRoute,
             ),
-            onGenerateRoute: generateRoute,
           );
         },
       ),

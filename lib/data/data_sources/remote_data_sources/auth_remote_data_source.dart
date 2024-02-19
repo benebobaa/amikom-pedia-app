@@ -45,29 +45,34 @@ class AuthRemoteDataSourceImpl extends AuthRemoteDataSource {
   @override
   Future<BaseResponse<LoginModel>> login(
       String usernameOrEmail, String password) async {
-    Map<String, dynamic> body = {
-      "username_or_email": usernameOrEmail,
-      "password": password
-    };
+    final response = await client.post(
+      Uri.parse(Urls.login),
+      body: {
+        "usernameOrEmail": usernameOrEmail,
+        "password": password,
+      },
+    ).timeout(
+      const Duration(seconds: 5),
+      onTimeout: () => throw TimeoutException(),
+    );
 
-    final response = await client
-        .post(
-          Uri.parse(Urls.login),
-          body: body,
-        )
-        .timeout(
-          const Duration(seconds: 5),
-          onTimeout: () => throw TimeoutException(),
-        );
+    print("usernameOrEmail: $usernameOrEmail");
+    print("password: $password");
+
+    print(response.body);
 
     if (response.statusCode == 200) {
       return BaseResponse<LoginModel>.fromJson(
         jsonDecode(response.body),
-        LoginModel.fromJson as LoginModel Function(dynamic),
+        LoginModel.fromJson,
       );
     }
-    if (response.statusCode == 401) {
+    if (response.statusCode == 401 || response.statusCode == 400) {
       throw BadRequestException();
+    }
+
+    if (response.statusCode == 404) {
+      throw NotFoundException();
     }
 
     throw Exception();

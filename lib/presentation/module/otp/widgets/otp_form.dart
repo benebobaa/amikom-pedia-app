@@ -21,7 +21,7 @@ class OtpForm extends StatelessWidget {
                   if (value.length == 1) {
                     FocusScope.of(context).nextFocus();
                   }
-                  if (value.length == 0) {
+                  if (value.isEmpty) {
                     FocusScope.of(context).previousFocus();
                   }
                 },
@@ -32,11 +32,11 @@ class OtpForm extends StatelessWidget {
                   fillColor: Colors.grey[100],
                   filled: true,
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.transparent),
+                    borderSide: const BorderSide(color: Colors.transparent),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.transparent),
+                    borderSide: const BorderSide(color: Colors.transparent),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
@@ -58,7 +58,7 @@ class OtpForm extends StatelessWidget {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
                 }
-                if (value.length == 0) {
+                if (value.isEmpty) {
                   FocusScope.of(context).previousFocus();
                 }
               },
@@ -69,11 +69,11 @@ class OtpForm extends StatelessWidget {
                 fillColor: Colors.grey[100],
                 filled: true,
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
@@ -89,7 +89,7 @@ class OtpForm extends StatelessWidget {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
                 }
-                if (value.length == 0) {
+                if (value.isEmpty) {
                   FocusScope.of(context).previousFocus();
                 }
               },
@@ -100,11 +100,11 @@ class OtpForm extends StatelessWidget {
                 fillColor: Colors.grey[100],
                 filled: true,
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
@@ -121,7 +121,7 @@ class OtpForm extends StatelessWidget {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
                 }
-                if (value.length == 0) {
+                if (value.isEmpty) {
                   FocusScope.of(context).previousFocus();
                 }
               },
@@ -132,11 +132,11 @@ class OtpForm extends StatelessWidget {
                 fillColor: Colors.grey[100],
                 filled: true,
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
@@ -153,7 +153,7 @@ class OtpForm extends StatelessWidget {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
                 }
-                if (value.length == 0) {
+                if (value.isEmpty) {
                   FocusScope.of(context).previousFocus();
                 }
               },
@@ -164,11 +164,11 @@ class OtpForm extends StatelessWidget {
                 fillColor: Colors.grey[100],
                 filled: true,
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
@@ -185,7 +185,7 @@ class OtpForm extends StatelessWidget {
                 if (value.length == 1) {
                   FocusScope.of(context).nextFocus();
                 }
-                if (value.length == 0) {
+                if (value.isEmpty) {
                   FocusScope.of(context).previousFocus();
                 }
               },
@@ -196,11 +196,11 @@ class OtpForm extends StatelessWidget {
                 fillColor: Colors.grey[100],
                 filled: true,
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.transparent),
+                  borderSide: const BorderSide(color: Colors.transparent),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
