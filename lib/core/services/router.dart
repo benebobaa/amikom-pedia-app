@@ -1,3 +1,4 @@
+import 'package:amikompedia_app/presentation/module/home/home_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/otp_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/otp_success_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/widgets/otp_form_lib.dart';
@@ -55,9 +56,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case StepperThreePage.routeName:
       return _pageBuilder((_) => StepperThreePage(), settings: settings);
 
+    //pincode
     case PinCodeVerificationScreen.routeName:
       return _pageBuilder((_) => PinCodeVerificationScreen(),
           settings: settings);
+
+    //home
+    case HomePage.routeName:
+      return _pageBuilder((_) => HomePage(), settings: settings);
 
     default:
       return _pageBuilder(

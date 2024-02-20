@@ -6,8 +6,8 @@ import 'package:amikompedia_app/core/widgets/custom_text_form_field.dart';
 import 'package:amikompedia_app/presentation/bloc/login_bloc/login_bloc.dart';
 import 'package:amikompedia_app/presentation/bloc/login_bloc/login_event.dart';
 import 'package:amikompedia_app/presentation/bloc/login_bloc/login_state.dart';
+import 'package:amikompedia_app/presentation/module/home/home_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/otp_page.dart';
-import 'package:amikompedia_app/presentation/module/stepper/stepper_one_page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -82,7 +82,7 @@ class LoginPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 60.h),
-              Container(
+              SizedBox(
                 height: 18.h,
                 child: Image.asset(
                   MediaRes.icLogo,
@@ -168,8 +168,7 @@ class LoginPage extends StatelessWidget {
                       ),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                          Navigator.pushNamed(
-                              context, StepperOnePage.routeName);
+                          Navigator.pushNamed(context, HomePage.routeName);
                         },
                     ),
                   ],
