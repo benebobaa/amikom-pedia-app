@@ -6,6 +6,7 @@ import 'package:amikompedia_app/core/widgets/custom_text_form_field.dart';
 import 'package:amikompedia_app/presentation/bloc/login_bloc/login_bloc.dart';
 import 'package:amikompedia_app/presentation/bloc/login_bloc/login_event.dart';
 import 'package:amikompedia_app/presentation/bloc/login_bloc/login_state.dart';
+import 'package:amikompedia_app/presentation/module/botnav/botnav_page..dart';
 import 'package:amikompedia_app/presentation/module/home/home_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/otp_page.dart';
 import 'package:flutter/gestures.dart';
@@ -168,7 +169,7 @@ class LoginPage extends StatelessWidget {
                       ),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                          Navigator.pushNamed(context, HomePage.routeName);
+                          Navigator.pushNamed(context, BotNavPage.routeName);
                         },
                     ),
                   ],

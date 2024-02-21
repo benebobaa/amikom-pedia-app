@@ -33,4 +33,6 @@ class Urls {
   static const String updateUser = '$apiUrl/api/v1/users';
 
   static const String profileUser = '$apiUrl/api/v1/users/profile';
+
+  static const String allPosts = '$apiUrl/api/v1/posts';
 }

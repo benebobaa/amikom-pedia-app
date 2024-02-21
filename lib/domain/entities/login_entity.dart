@@ -66,7 +66,6 @@ class UserEntity extends Equatable {
   @override
   List<Object?> get props => [email, nim, name, username, bio];
 
-
   UserEntity toEntity() => UserEntity(
         email: email,
         nim: nim,
@@ -74,4 +73,26 @@ class UserEntity extends Equatable {
         username: username,
         bio: bio,
       );
+
+  factory UserEntity.fromJson(Map<String, dynamic> json) {
+    return UserEntity(
+      email: json['email'],
+      nim: json['nim'],
+      name: json['name'],
+      username: json['username'],
+      bio: json['bio'],
+    );
+  }
+
+  //to json
+
+  Map<String, dynamic> toJson() {
+    return {
+      'email': email,
+      'nim': nim,
+      'name': name,
+      'username': username,
+      'bio': bio,
+    };
+  }
 }

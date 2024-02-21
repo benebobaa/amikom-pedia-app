@@ -1,3 +1,4 @@
+import 'package:amikompedia_app/presentation/module/botnav/botnav_page..dart';
 import 'package:amikompedia_app/presentation/module/home/home_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/otp_page.dart';
 import 'package:amikompedia_app/presentation/module/otp/otp_success_page.dart';
@@ -64,6 +65,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //home
     case HomePage.routeName:
       return _pageBuilder((_) => HomePage(), settings: settings);
+
+    //botnav
+    case BotNavPage.routeName:
+      return _pageBuilder((_) => const BotNavPage(), settings: settings);
 
     default:
       return _pageBuilder(
